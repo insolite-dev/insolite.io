@@ -10,12 +10,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
-    "@heroicons/react": "^2.0.15",
     "@next/font": "13.1.5",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "classnames": "^2.3.2",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
     "framer-motion": "^8.5.3",
