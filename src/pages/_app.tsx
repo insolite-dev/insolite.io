@@ -1,5 +1,6 @@
 import "@/styles/globals.css"
 import Header from "components/header"
+import Footer from "components/footer"
 import type { AppProps } from "next/app"
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -8,7 +9,12 @@ export default function App({ Component, pageProps }: AppProps) {
             <header>
                 <Header />
             </header>
-            <Component {...pageProps} />
+            <main>
+                <Component {...pageProps} />
+            </main>
+            <footer className="bg-[#111111] py-6">
+                <Footer />
+            </footer>
         </div>
     )
 }
