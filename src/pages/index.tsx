@@ -42,7 +42,7 @@ export default function Home() {
                                 Blogs.
                             </h1>
                             <p className="mt-6 text-lg text-wrap mr-0 sm:mr-48 leading-8 text-gray-500">
-                                The unqiue source from insolite team, about anthing and for anyone.
+                                The unqiue source from insolite team, about anything and for anyone.
                             </p>
                         </div>
                     </div>
