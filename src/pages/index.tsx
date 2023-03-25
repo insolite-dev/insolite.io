@@ -1,7 +1,9 @@
+import Link from "next/link";
 import BlogCard from "components/blogCard"
-import Card from "components/card"
 import Hero from "components/hero"
 import Head from "next/head"
+
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
     return (
@@ -18,37 +20,29 @@ export default function Home() {
                 <div className="bg-black py-24 sm:py-32">
                     <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
                         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-8xl">
-                                Projects & Startups.
+                            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-7xl">
+                                Des Projects {" "}
+                                <span className="text-4xl sm:text-7xl font-bold gradient-text">Insolites</span>
                             </h1>
-                            <p className="mt-6 text-lg text-wrap mr-0 sm:mr-48 leading-8 text-gray-500">
-                                We love open source and we believe that, it will be future of tech community and
-                                humanity.
+                            <p className="mt-6 text-md text-wrap mr-0 sm:mr-48 leading-8 text-gray-500">
+                                Unique, Minimalist, and Remarkable projects.
+                                but, as Open Source
                             </p>
+                            <Link href={"https://github.com/insolite-dev/"}>
+                                <button className="flex flex-row items-center bg-[#0C0C0C] p-3 my-6 rounded text-white shadow-md shadow-[#4568DC] hover:text-gray-200 hover:bg-[#0C0C0C]/80 transition-all">
+                                    <span>Chesck projects</span>
+                                    <ArrowRightIcon className="h-5 w-5 ml-2" />
+                                </button>
+                            </Link>
                         </div>
-                        <div className="mt-16 sm:mt-24 lg:mt-0 flex justify-center lg:flex-shrink-0 lg:flex-grow">
-                            <Card />
-                        </div>
-                    </div>
-                </div>
-                {/* Blogs */}
-                <div className="bg-[#0C0C0C] py-24 sm:py-32">
-                    <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
                         <div className="mt-16 sm:mt-24 lg:mt-0 flex justify-center lg:flex-shrink-0 lg:flex-grow">
                             <BlogCard />
                         </div>
-                        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-8xl">
-                                Blogs.
-                            </h1>
-                            <p className="mt-6 text-lg text-wrap mr-0 sm:mr-48 leading-8 text-gray-500">
-                                The unqiue source from insolite team, about anything and for anyone.
-                            </p>
-                        </div>
                     </div>
                 </div>
+
                 {/* Insolite Community  */}
-                <div className="bg-black py-24 sm:py-32">
+                <div className="bg-[#0C0C0C] py-24 sm:py-32">
                     <div className="flex flex-col mx-auto max-w-2xl text-center items-center justify-center font-mono">
                         <h1 className="text-4xl sm:text-7xl font-bold gradient-text">
                             Insolite <br />
