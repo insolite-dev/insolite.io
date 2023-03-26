@@ -12,22 +12,22 @@ const about = () => {
                 />
                 <link rel="icon" href={"/favicon.ico"} />
             </Head>
-            <div className="w-full bg-black flex flex-col justify-center items-center py-24">
+            <div className="w-full bg-black flex flex-col justify-center items-center py-24 px-4 sm:px-0">
                 <InsoliteWhiteLogo />
                 <div className="my-24">
-                    <p className="font-normal text-[white] text-center text-lg sm:text-2xl my-5">
+                    <p className="font-normal text-[white] text-center text-xl sm:text-2xl my-5">
                         Welcome to Insolite! Our company is dedicated to building unique <br /> projects and startups
                         that are open source. Our mission is to <br /> provide developers of all skill levels with the
                         opportunity to learn, <br /> work, and earn in a collaborative and supportive environment.
                     </p>
-                    <p className="font-normal text-[white] text-center text-lg sm:text-2xl my-5">
+                    <p className="font-normal text-[white] text-center text-xl sm:text-2xl my-5">
                         We believe that the key to our success is our community. By <br /> fostering a strong community
                         of developers, we are able to bring <br /> together diverse perspectives and ideas to create
                         innovative and <br /> impactful projects. We believe in giving back to the community by <br />{" "}
                         making our projects open source, allowing anyone to use, modify, <br /> and contribute to our
                         work.
                     </p>
-                    <p className="font-normal text-[white] text-center text-lg sm:text-2xl">
+                    <p className="font-normal text-[white] text-center text-xl sm:text-2xl">
                         At Insolite, we understand that traditional hiring processes can be <br /> barriers for some
                         talented developers. That&apos;s why we&apos;ve created a <br /> unique approach to recruitment.
                         By joining our Discord server, <br /> you&apos;ll have the chance to work with us without any
