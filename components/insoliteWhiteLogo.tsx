@@ -1,4 +1,4 @@
-export default function Logo({ size = 35, ...props }) {
+export default function InsoliteWhiteLogo({ size = 35, ...props }) {
     return (
         <svg width="300" height="300" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2_14)">

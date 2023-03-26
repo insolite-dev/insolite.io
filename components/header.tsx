@@ -14,7 +14,7 @@ const navigation: INavigationProps[] = [
     { name: "Home", href: "/", current: true },
     { name: "Projects", href: "/projects", current: false },
     { name: "Design", href: "https://twitter.com/insolite_design" },
-    { name: "About Us", href: "/contact", current: false }
+    { name: "About Us", href: "/about", current: false }
 ]
 
 function classNames(...classes: string[]) {
