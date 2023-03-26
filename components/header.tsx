@@ -4,12 +4,17 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import Logo from "public/insolite-logo.svg"
 import { Fragment } from "react"
 
-const navigation = [
+interface INavigationProps {
+    name: string
+    href: string
+    current?: boolean
+}
+
+const navigation: INavigationProps[] = [
     { name: "Home", href: "/", current: true },
     { name: "Projects", href: "/projects", current: false },
-    { name: "About Us", href: "/about", current: false },
-    { name: "Blog", href: "/blog", current: false },
-    { name: "Contact", href: "/contact", current: false }
+    { name: "Design", href: "https://twitter.com/insolite_design" },
+    { name: "About Us", href: "/contact", current: false }
 ]
 
 function classNames(...classes: string[]) {
@@ -92,8 +97,8 @@ export default function Header() {
                                             href={item.href}
                                             className={classNames(
                                                 item.current
-                                                    ? "bg-gray-600 text-white"
-                                                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                                                    ? "bg-[#5E8275] text-white"
+                                                    : "text-gray-300 hover:bg-[#5E8275] hover:text-white",
                                                 "block px-3 py-2 rounded-md text-base font-medium"
                                             )}
                                             aria-current={item.current ? "page" : undefined}

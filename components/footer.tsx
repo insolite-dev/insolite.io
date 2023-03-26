@@ -3,13 +3,15 @@ import Link from "next/link"
 import Logo from "public/insolite-logo.svg"
 
 const navigation = [
-    { name: "Terms", href: "/terms" },
-    { name: "Projects", href: "/projects" },
-    { name: "About Us", href: "/about" },
-    { name: "Blog", href: "/blog" }
+    { name: "Open Source", href: "https://github.com/insolite-dev/" },
+    { name: "About", href: "/about" },
+    { name: "Design", href: "https://twitter.com/insolite_design" },
+    { name: "Twitter", href: "https://twitter.com/insolite_io" },
+    { name: "Instagram", href: "https://www.instagram.com/insolite_io/"},
 ]
 
 const Footer = () => {
+
     return (
         <div className="bg-[#111111] flex flex-col sm:flex-row items-center space-y-2 justify-start mx-6 py-2">
             <div className="flex flex-shrink-0 items-center">
@@ -35,7 +37,7 @@ const Footer = () => {
                 <ul>
                     <li className="space-x-4">
                         {navigation.map(item => (
-                            <Link className="text-[#5E8275]" key={item.name} as={"a"} href={item.href}>
+                            <Link className="text-[#5E8275]" key={item.name} href={item.href}>
                                 {item.name}
                             </Link>
                         ))}
