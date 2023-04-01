@@ -3,7 +3,7 @@ import Link from "next/link"
 import Logo from "public/insolite-logo.svg"
 
 const navigation = [
-    { name: "Open Source", href: "#projects" },
+    { name: "Open Source", href: "https://github.com/insolite-dev" },
     { name: "About", href: "/about" },
     { name: "Design", href: "https://twitter.com/insolite_design" },
     { name: "Twitter", href: "https://twitter.com/insolite_io" },

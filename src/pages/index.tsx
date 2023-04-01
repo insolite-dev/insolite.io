@@ -55,7 +55,7 @@ export default function Home() {
                     <p className="text-white mt-6 text-sm sm:text-lg px-3 leading-10">
                         We believe that, the best way to do that, is Community. To gain the chance to work with us
                         without any interview and early process, join our{" "}
-                        <Link href="https://discord.gg/nfPFWSSSgM" className="font-bold gradient-text">
+                        <Link href="https://github.com/insolite-dev" className="font-bold gradient-text">
                             Discord
                         </Link>{" "}
                         server.

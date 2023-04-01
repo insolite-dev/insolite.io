@@ -12,7 +12,7 @@ interface INavigationProps {
 
 const navigation: INavigationProps[] = [
     { name: "Home", href: "/", current: true },
-    { name: "Projects", href: "/projects", current: false },
+    { name: "Projects", href: "https://github.com/insolite-dev", current: false },
     { name: "Design", href: "https://twitter.com/insolite_design" },
     { name: "About Us", href: "/about", current: false }
 ]
