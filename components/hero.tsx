@@ -33,7 +33,7 @@ const Hero = () => {
                         href="https://discord.gg/wcBQywHRZF"
                         target="_blank"
                         rel="noreferrer"
-                        className="flex flex-row w-full lg:w-32 justify-between text-base font-semibold leading-7 text-white bg-black px-4 py-2 rounded shadow-md shadow-indigo-900 hover:text-gray-200 hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="flex flex-row w-full lg:w-32 justify-between text-base font-semibold leading-7 text-white bg-black px-4 py-2 rounded shadow-md shadow-[#5E8275] hover:text-gray-200 hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
                         <span>Join Us</span>
                         <ArrowRightIcon width={20} />
