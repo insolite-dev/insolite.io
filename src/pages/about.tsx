@@ -13,8 +13,10 @@ const about = () => {
                 <link rel="icon" href={"/favicon.ico"} />
             </Head>
             <div className="w-full bg-black flex flex-col justify-center items-center py-24 px-4 sm:px-0">
-                <InsoliteWhiteLogo />
-                <div className="my-24">
+                <div>
+                    <InsoliteWhiteLogo className="w-32 h-32 sm:w-full sm:h-full" />
+                </div>
+                <div className="my-16 sm:my-24">
                     <p className="font-normal text-[white] text-center text-xl sm:text-2xl my-5">
                         Welcome to Insolite! Our company is dedicated to building unique <br /> projects and startups
                         that are open source. Our mission is to <br /> provide developers of all skill levels with the

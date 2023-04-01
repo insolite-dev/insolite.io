@@ -44,7 +44,7 @@ export default function Home() {
             {/* Insolite Community  */}
             <div className="bg-[#0C0C0C] py-24 sm:py-52">
                 <div className="flex flex-col mx-auto max-w-2xl text-center items-center justify-center font-mono">
-                    <h1 className="text-4xl text-center sm:text-7xl font-bold gradient-text">
+                    <h1 className="text-4xl text-center inline-block sm:text-7xl font-bold gradient-text">
                         Insolite <br />
                         Community
                     </h1>
