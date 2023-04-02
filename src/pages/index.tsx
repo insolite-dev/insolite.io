@@ -10,8 +10,12 @@ export default function Home() {
         <>
             <Head>
                 <title>Insolite - Connecting the dots</title>
-                <meta name="description" content="Home - Insolite" />
+                <meta
+                    name="description"
+                    content="Connecting the dots. To make remarkable, insanely simple, and insolite projects."
+                />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta property="og:image" content="/insolite-logo.svg" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
