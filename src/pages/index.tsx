@@ -15,7 +15,7 @@ export default function Home() {
                     content="Connecting the dots. To make remarkable, insanely simple, and insolite projects."
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:image" content="/insolite-logo.svg" />
+                <meta property="og:image" content="/insolite-logo.png" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
