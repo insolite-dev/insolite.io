@@ -10,8 +10,12 @@ export default function Home() {
         <>
             <Head>
                 <title>Insolite - Connecting the dots</title>
-                <meta name="description" content="Home - Insolite" />
+                <meta
+                    name="description"
+                    content="Connecting the dots. To make remarkable, insanely simple, and insolite projects."
+                />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta property="og:image" content="/insolite-logo.png" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
@@ -44,7 +48,7 @@ export default function Home() {
             {/* Insolite Community  */}
             <div className="bg-[#0C0C0C] py-24 sm:py-52">
                 <div className="flex flex-col mx-auto max-w-2xl text-center items-center justify-center font-mono">
-                    <h1 className="text-4xl text-center sm:text-7xl font-bold gradient-text">
+                    <h1 className="text-4xl text-center inline-block sm:text-7xl font-bold gradient-text">
                         Insolite <br />
                         Community
                     </h1>

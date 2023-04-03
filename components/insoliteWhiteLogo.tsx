@@ -1,6 +1,16 @@
-export default function InsoliteWhiteLogo({ size = 35, ...props }) {
+import React from "react"
+import { ISVGProps } from "../types/index"
+
+export default function InsoliteWhiteLogo({ size = 35, ...props }: ISVGProps) {
     return (
-        <svg width="300" height="300" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            width="300"
+            height="300"
+            className={props.className}
+            viewBox="0 0 35 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
             <g>
                 <path
                     d="M3.125 0C1.39911 0 0 1.39911 0 3.125V7.8125H0.625H14.375C14.8927 7.8125 15.3125 8.23225 15.3125 8.75V13.4375H22.0181C22.4163 12.1696 23.6007 11.25 25 11.25C26.7259 11.25 28.125 12.6491 28.125 14.375C28.125 16.1009 26.7259 17.5 25 17.5C23.6007 17.5 22.4163 16.5804 22.0181 15.3125H15.3125V23.125V23.2681C16.5804 23.6663 17.5 24.8507 17.5 26.25C17.5 27.9759 16.1009 29.375 14.375 29.375C12.6491 29.375 11.25 27.9759 11.25 26.25C11.25 24.8507 12.1696 23.6663 13.4375 23.2681V23.125V9.6875H0.625H0V31.875C0 33.6009 1.39911 35 3.125 35H31.875C33.6009 35 35 33.6009 35 31.875V3.125C35 1.39911 33.6009 0 31.875 0H3.125Z"
