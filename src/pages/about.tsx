@@ -11,8 +11,8 @@ const about = () => {
                     content="Insolite is a company dedicated to building unique projects and startups that are open source. Our mission is to provide developers of all skill levels with the opportunity to learn, work, and earn in a collaborative and supportive environment."
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:image" content="/insolite-logo.png" />
-                <link rel="icon" href={"/favicon.ico"} />
+                <meta property="og:image" content="/insolite-black-logo.png" />
+                <link rel="icon" href="/insolite-logo.png" />
             </Head>
             <div className="w-full bg-black flex flex-col justify-center items-center py-24 px-4 sm:px-0">
                 <div>
