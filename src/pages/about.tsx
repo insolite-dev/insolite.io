@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import InsoliteWhiteLogo from "../../components/insoliteWhiteLogo"
 
 const about = () => {
@@ -42,9 +43,11 @@ const about = () => {
                         contribute to our projects.
                     </p>
 
-                    <h1 className="text-center text-2xl sm:text-3xl text-transparent my-4 gradient-text">
-                        Let&apos;s make it real, together!
-                    </h1>
+                    <Link href="mailto:contact@insolite.io">
+                        <h1 className="text-center text-2xl sm:text-3xl text-transparent my-4 gradient-text">
+                            Let&apos;s make it real, together!
+                        </h1>
+                    </Link>
                 </div>
             </div>
         </>
