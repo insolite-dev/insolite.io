@@ -1,4 +1,6 @@
 import Head from "next/head"
+
+import Team from "../../components/getTeamFromFirebase"
 import InsoliteWhiteLogo from "../../components/insoliteWhiteLogo"
 
 const about = () => {
@@ -14,11 +16,11 @@ const about = () => {
                 <meta property="og:image" content="/insolite-logo.png" />
                 <link rel="icon" href={"/favicon.ico"} />
             </Head>
-            <div className="w-full bg-black flex flex-col justify-center items-center py-24 px-4 sm:px-0">
+            <div className="w-full bg-black flex flex-col justify-center items-center pt-24 pb-3 px-4 sm:px-0">
                 <div>
                     <InsoliteWhiteLogo className="w-32 h-32 sm:w-full sm:h-full" />
                 </div>
-                <div className="my-16 sm:my-24">
+                <div className="mt-3 sm:mt-6 mb-6">
                     <p className="font-normal text-[white] text-center text-xl sm:text-2xl my-5">
                         Welcome to Insolite! Our company is dedicated to building unique <br /> projects and startups
                         that are open source. Our mission is to <br /> provide developers of all skill levels with the
@@ -42,10 +44,25 @@ const about = () => {
                         contribute to our projects.
                     </p>
 
-                    <h1 className="text-center text-2xl sm:text-3xl text-transparent my-4 gradient-text">
+                    <h1 className="text-center text-2xl mt-6 sm:text-3xl text-transparent gradient-text">
                         Let&apos;s make it real, together!
                     </h1>
                 </div>
+
+                {/* divider */}
+                <hr className="w-2/4 sm:w-1/3 my-4 border-t border-white" />
+
+                {/* Team */}
+                <h1 className="font-semibold mt-4 text-4xl text-white text-center">Team</h1>
+                <Team />
+
+                {/* divider */}
+                <hr className="w-2/4 sm:w-1/3 my-4 border-t border-white" />
+                <p className="text-white text-sm text-center w-3/3 sm:w-1/3 my-12">
+                    Please don&apos;t hesitate to check out our contributors, who are a significant part of the main
+                    team. You can find them on our main communication platform, Discord. Tip: their contributions will
+                    be marked with a special role for the project, library, or team.
+                </p>
             </div>
         </>
     )
