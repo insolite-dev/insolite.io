@@ -1,6 +1,6 @@
 import Head from "next/head"
-
 import Team from "../../components/getTeamFromFirebase"
+import Link from "next/link"
 import InsoliteWhiteLogo from "../../components/insoliteWhiteLogo"
 
 const about = () => {
@@ -13,8 +13,8 @@ const about = () => {
                     content="Insolite is a company dedicated to building unique projects and startups that are open source. Our mission is to provide developers of all skill levels with the opportunity to learn, work, and earn in a collaborative and supportive environment."
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:image" content="/insolite-logo.png" />
-                <link rel="icon" href={"/favicon.ico"} />
+                <meta property="og:image" content="/insolite-black-logo.png" />
+                <link rel="icon" href="/insolite-logo.png" />
             </Head>
             <div className="w-full bg-black flex flex-col justify-center items-center pt-24 pb-3 px-4 sm:px-0">
                 <div>
@@ -44,9 +44,11 @@ const about = () => {
                         contribute to our projects.
                     </p>
 
-                    <h1 className="text-center text-2xl mt-6 sm:text-3xl text-transparent gradient-text">
-                        Let&apos;s make it real, together!
-                    </h1>
+                    <Link href="mailto:contact@insolite.io">
+                        <h1 className="text-center text-2xl sm:text-3xl text-transparent my-4 gradient-text">
+                            Let&apos;s make it real, together!
+                        </h1>
+                    </Link>
                 </div>
 
                 {/* divider */}
