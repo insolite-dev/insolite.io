@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Team from "../../components/getTeamFromFirebase"
 import Link from "next/link"
 import InsoliteWhiteLogo from "../../components/insoliteWhiteLogo"
 
@@ -50,21 +49,6 @@ const about = () => {
                         </h1>
                     </Link>
                 </div>
-
-                {/* divider */}
-                <hr className="w-2/4 sm:w-1/3 my-4 border-t border-white" />
-
-                {/* Team */}
-                <h1 className="font-semibold mt-4 text-4xl text-white text-center">Team</h1>
-                <Team />
-
-                {/* divider */}
-                <hr className="w-2/4 sm:w-1/3 my-4 border-t border-white" />
-                <p className="text-white text-sm text-center w-3/3 sm:w-1/3 my-12">
-                    Please don&apos;t hesitate to check out our contributors, who are a significant part of the main
-                    team. You can find them on our main communication platform, Discord. Tip: their contributions will
-                    be marked with a special role for the project, library, or team.
-                </p>
             </div>
         </>
     )
