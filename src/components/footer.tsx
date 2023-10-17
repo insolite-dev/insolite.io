@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import Logo from "public/insolite-logo.svg"
+import Logo from "../../public/insolite-logo.svg"
 
 const navigation = [
     { name: "Open Source", href: "https://github.com/insolite-dev" },
