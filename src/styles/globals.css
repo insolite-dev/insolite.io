@@ -2395,3 +2395,26 @@ footer p {
 .spacerBottom {
     margin-bottom: 1.8rem;
 }
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.social-icons a {
+    margin-right: 13px;
+}
+
+.social-icons .icon {
+    font-size: 22px;
+}
+
+.social-icons .icon-x {
+    font-size: 20px;
+}
+
+.social-icons .icon-y {
+    font-size: 24px;
+}

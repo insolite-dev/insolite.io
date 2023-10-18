@@ -1,22 +1,29 @@
 import InsoliteLogo from "./insolite_logo";
+import { AiFillGithub, AiFillYoutube } from 'react-icons/ai';
+import { FaXTwitter } from 'react-icons/fa6';
+import { BsDiscord } from 'react-icons/bs';
+
 
 export default function Footer() {
     return (
         <div className="row">
             <div className="col-10">
                 <section className="contact">
-                    <p>
+                    <div className="social-icons">
                         <a href="https://github.com/insolite-dev" target="_blank" rel="noopener noreferrer">
-                            {/* TODO: add GitHub svg icon*/}
+                            <AiFillGithub className="icon"/>
                         </a>
                         <a href="https://x.com/insolite-dev" target="_blank" rel="noopener noreferrer">
-                            {/* TODO: add X(Twitter) svg icon*/}
+                            <FaXTwitter className="icon-x"/>
+                        </a>
+                        <a href="https://insolite.io/discord" target="_blank" rel="noopener noreferrer">
+                            <BsDiscord className="icon"/>
                         </a>
                         <a href="https://youtube.com/@InsoliteArchive?si=9Io_ojf75k2UEORg" target="_blank" rel="noopener noreferrer">
-                            {/* TODO: add youtube svg icon*/}
+                            <AiFillYoutube className="icon-y"/>
                         </a>
-                        <br /> Insolite Corp © 2021. All rights reserved.
-                    </p>
+                    </div>
+                    <p>Insolite Corp © 2021. All rights reserved.</p>
                 </section>
             </div>
             <div className="col-2 footer-logo">
