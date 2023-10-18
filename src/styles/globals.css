@@ -185,8 +185,7 @@ h2,
 .h2,
 h1,
 .h1 {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   font-family: "Saira Condensed", sans-serif;
   font-weight: 500;
   line-height: 1.2;
@@ -199,7 +198,6 @@ h1,
 }
 
 @media (min-width: 1200px) {
-
   h1,
   .h1 {
     font-size: 2.2rem
@@ -250,11 +248,6 @@ h5,
 h6,
 .h6 {
   font-size: 1.1rem
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem
 }
 
 abbr[title] {
@@ -335,7 +328,8 @@ sup {
 
 a {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-  text-decoration: underline
+  text-decoration: underline;
+  font-weight: 700
 }
 
 a:hover {
@@ -2371,4 +2365,34 @@ footer p {
   align-items: flex-end;
   justify-content: flex-end;
   padding-bottom: 5px
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.title-2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.title-desc {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.text-content {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+}
+
+.paddingBottom {
+    margin-bottom: 1.2rem;
+}
+
+.spacerBottom {
+    margin-bottom: 1.8rem;
 }
