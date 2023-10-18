@@ -1,24 +1,23 @@
 import "@/styles/globals.css"
-import { Analytics } from "@vercel/analytics/react"
-import Header from "components/header"
-import Footer from "components/footer"
 import type { AppProps } from "next/app"
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
-            <div>
-                <header>
-                    <Header />
-                </header>
-                <main>
-                    <Component {...pageProps} />
-                </main>
-                <footer className="bg-[#111111] py-6">
-                    <Footer />
-                </footer>
-            </div>
-            <Analytics />
+            <Head>
+                <title>Insolite - Connecting the dots</title>
+                <meta
+                    name="description"
+                    content="Connecting the dots. To make remarkable, insanely simple, and insolite projects."
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta property="og:image" content="/insolite-black-logo.png" />
+                <link rel="icon" href="/insolite-logo.png" />
+            </Head>
+            <main>
+                <Component {...pageProps} />
+            </main>
         </>
     )
 }

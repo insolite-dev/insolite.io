@@ -1,71 +1,80 @@
-import Link from "next/link"
-import Card from "components/Card"
-import Hero from "components/hero"
-import Head from "next/head"
-
-import { ArrowRightIcon } from "@heroicons/react/24/solid"
+import Footer from '@/components/footer';
+import InsoliteLogo from '@/components/insolite_logo';
+import Ctd from "../../public/ctd.png";
+import Image from 'next/image';
 
 export default function Home() {
     return (
         <>
-            <Head>
-                <title>Insolite - Connecting the dots</title>
-                <meta
-                    name="description"
-                    content="Connecting the dots. To make remarkable, insanely simple, and insolite projects."
+            <div className="ctd-bg">
+                <Image
+                    priority
+                    src={Ctd}
+                    alt="bg"
+                    className="ctd-bg-img"
                 />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta property="og:image" content="/insolite-black-logo.png" />
-                <link rel="icon" href="/insolite-logo.png" />
-            </Head>
-            <div>
-                <Hero />
-                {/* Projects */}
-                <div id="projects" className="bg-black py-24 sm:py-32">
-                    <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
-                        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-                            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-7xl">
-                                Des Projects{" "}
-                                <span className="text-4xl sm:text-7xl font-bold gradient-text">Insolites</span>
-                            </h1>
-                            <p className="mt-6 text-md text-wrap mr-0 sm:mr-48 leading-8 text-gray-500">
-                                Unique, Minimalist, and Remarkable projects. but, as Open Source
-                            </p>
-                            <Link href={"https://github.com/insolite-dev/"}>
-                                <button className="flex flex-row items-center bg-[#0C0C0C] p-3 my-6 rounded text-white shadow-sm shadow-[#5E8275] hover:text-gray-200 hover:bg-[#0C0C0C]/80 transition-all">
-                                    <span>Check projects</span>
-                                    <ArrowRightIcon className="h-5 w-5 ml-2" />
-                                </button>
-                            </Link>
-                        </div>
-                        <div className="mt-16 sm:mt-24 lg:mt-0 flex justify-center lg:flex-shrink-0 lg:flex-grow">
-                            <Card />
-                        </div>
-                    </div>
-                </div>
             </div>
-
-            {/* Insolite Community  */}
-            <div className="bg-[#0C0C0C] py-24 sm:py-52">
-                <div className="flex flex-col mx-auto max-w-2xl text-center items-center justify-center font-mono">
-                    <h1 className="text-4xl text-center inline-block sm:text-7xl font-bold gradient-text">
-                        Insolite <br />
-                        Community
-                    </h1>
-                    <p className="text-gray-400 my-6 text-center text-sm sm:text-lg px-3 leading-10">
-                        At Insolite, we are on a mission to build unique projects & startups as open source. Where each
-                        kind of developer would have the opportunity to learn, work, and earn.
+            <div className="ctd">
+                <h2 className="animated display-3 animated-mission">
+                    <span>Connecting</span> <span>the</span> <span>dots</span>
+                </h2>
+                <a href="/" className="logo">
+                    <InsoliteLogo size="50" color="white" />
+                </a>
+            </div>
+            <div className="custom-container reveal">
+                <section>
+                    <h1 className="title"> Insolite </h1>
+                    <p className="title-desc"> Creating insanely simple and Insolite projects without borders,
+                        with complete transparency</p>
+                    <div className="spacerBottom" />
+                    <p className="text-content">
+                        Our “current” mission is to provide developers of all skill levels with the opportunity to learn, work/research, and earn in a collaborative and supportive environment.
                     </p>
-                    <p className="text-white mt-6 text-sm sm:text-lg px-3 leading-10">
-                        We believe that, the best way to do that, is Community. To gain the chance to work with us
-                        without any interview and early process, join our{" "}
-                        <Link href="https://github.com/insolite-dev" className="font-bold gradient-text">
-                            Discord
-                        </Link>{" "}
-                        server.
+                    <div className="paddingBottom" />
+                    <p className="text-content">
+                        We believe that the key to our success is our community. By fostering a strong community of developers, we are able to bring together diverse perspectives and ideas to create innovative and impactful projects. We believe in giving back to the community by making our projects open source, allowing anyone to use, modify, and contribute to our work.
                     </p>
-                </div>
+                    <div className="spacerBottom" />
+                    <h2 className="title-2"> Team </h2>
+                    <p className="text-content">
+                        Our team is led by{' '}
+                        <a href="https://x.com/theiskaa" className="link">
+                            Ismael Shakverdiev
+                        </a>
+                        , founder of Insolite. While leadership within our organization flexibly transitions based on the specific projects and teams involved.{' '}
+                        <br />
+                        <a href="https://x.com/Onurhan1337 " className="link">
+                            Onurhan Demir
+                        </a> leads our Web team and serves as our Cyber Security lead. {' '}
+                        <br />
+                        <a href="https://x.com/Onurhan1337 " className="link">
+                            Rasul Ramixanov
+                        </a> is a key member of our team, contributing as a Mobile & Backend Engineer.
+                    </p>
+                    <div className="spacerBottom" />
+                    <h2 className="title-2"> Join us </h2>
+                    <p className="text-content">
+                        At Insolite, we understand that traditional hiring processes can be barriers for some talented developers. That's why we've created a unique approach to recruitment. By joining our Discord server, you'll have the chance to work with us without any formal interview process. Our community is open and welcoming to all who share our passion for creating innovative and open source projects.
+                    </p>
+                    <div className="paddingBottom" />
+                    <p className="text-content">
+                        We are committed to providing a supportive and inclusive environment where everyone can thrive. Whether you're a seasoned developer or just starting out, we welcome you to join our community and contribute to our projects.
+                    </p>
+                    <div className="paddingBottom" />
+                    <p className="text-content">
+                        To apply, please send your CV/cover letter to{' '}
+                        <a href="mailto:careers@insolite.io">careers@insolite.io</a>. <br />
+                        Alternatively, you can join our <a href="https://insolite.io/discord">Discord server</a> or contribute directly to one of our projects on{' '}
+                        <a href="https://github.com/insolite-dev">github.com/insolite-dev</a> for the best way to get involved.
+                    </p>
+                    <div className="spacerBottom" />
+                </section>
+                <footer>
+                    <Footer />
+                </footer>
             </div>
         </>
-    )
+    );
 }
+
