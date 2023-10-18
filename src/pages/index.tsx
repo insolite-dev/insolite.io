@@ -1,19 +1,11 @@
+import Bg from '@/components/bg';
 import Footer from '@/components/footer';
 import InsoliteLogo from '@/components/insolite_logo';
-import Ctd from "../../public/ctd.png";
-import Image from 'next/image';
 
 export default function Home() {
     return (
         <>
-            <div className="ctd-bg">
-                <Image
-                    priority
-                    src={Ctd}
-                    alt="bg"
-                    className="ctd-bg-img"
-                />
-            </div>
+            <Bg />
             <div className="ctd">
                 <h2 className="animated display-3 animated-mission">
                     <span>Connecting</span> <span>the</span> <span>dots</span>
