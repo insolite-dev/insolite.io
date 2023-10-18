@@ -2300,17 +2300,48 @@ footer p {
   top: 0;
   display: flex;
   align-items: center;
-  z-index: 3;
+  z-index: 4;
   padding: 3rem;
-  background: #000;
+  background: rgba(0, 0, 0, 0.92);
   overflow: hidden;
-  justify-content: center
+  justify-content: center;
+}
+
+.ctd-bg {
+  position: fixed;
+  height: 100vh;
+  width: 40vw;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.ctd-bg-img {
+  position: fixed;
+  height: 100vh;
+  width: 40vw;
+  z-index: 3;
+  overflow: hidden;
+  justify-content: center;
 }
 
 @media (max-width: 767.98px) {
   .ctd {
     position: relative;
-    width: 100vw
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.92);
+  }
+  .ctd-bg {
+    position: absolute;
+    width: 100vw;
+    z-index: 3;
+  }
+  .ctd-bg-img {
+    position: relative;
+    width: 100vw;
   }
 }
 
@@ -2320,17 +2351,6 @@ footer p {
   z-index: 3;
   margin: 0;
   padding-top: 6rem
-}
-
-.ctd .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2
 }
 
 .logo {
