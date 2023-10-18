@@ -13,7 +13,7 @@ export default function Footer() {
                         <a href="https://github.com/insolite-dev" target="_blank" rel="noopener noreferrer">
                             <AiFillGithub className="icon"/>
                         </a>
-                        <a href="https://x.com/insolite-dev" target="_blank" rel="noopener noreferrer">
+                        <a href="https://x.com/insolite_io" target="_blank" rel="noopener noreferrer">
                             <FaXTwitter className="icon-x"/>
                         </a>
                         <a href="https://insolite.io/discord" target="_blank" rel="noopener noreferrer">
