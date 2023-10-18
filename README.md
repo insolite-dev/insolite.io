@@ -21,4 +21,4 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 
 ---
 
-<img alt="web" src="https://user-images.githubusercontent.com/59066341/230161011-202d17ca-decd-4cf6-b57c-fa9ec2b6dacf.png">
+<img alt="web" src="https://github.com/insolite-dev/insolite.io/assets/59066341/09a86ba8-cc3a-4047-b995-ca3cd5728747">
