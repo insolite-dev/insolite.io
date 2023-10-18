@@ -5,11 +5,11 @@ export default function Home() {
     return (
         <>
             <div className="ctd">
-                <a href="/">
-                    <InsoliteLogo />
-                </a>
                 <h2 className="animated display-3 animated-mission"><span>Connecting</span> <span>the</span> <span>dots</span>
                 </h2>
+                <a href="/" className="logo">
+                    <InsoliteLogo size="50" color="white" />
+                </a>
             </div>
             <div className="custom-container reveal">
                 <section>
