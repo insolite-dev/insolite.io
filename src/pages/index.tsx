@@ -3,16 +3,15 @@ import Footer from '@/components/footer';
 import InsoliteLogo from '@/components/insolite_logo';
 
 export default function Home() {
+    const slogElements = "Connecting the dots".split('').map((char, index) => (
+        <span key={index}>{char}</span>
+    ));
     return (
         <>
             <Bg />
             <div className="ctd">
-                <h2 className="animated display-3 animated-mission">
-                    <span>Connecting</span> <span>the</span> <span>dots</span>
-                </h2>
-                <a href="/" className="logo">
-                    <InsoliteLogo size="50" color="white" />
-                </a>
+                <h2 className="animated display-3 animated-mission"> {slogElements} </h2>
+                <a href="/" className="logo"> <InsoliteLogo size="50" color="white" /> </a>
             </div>
             <div className="custom-container reveal">
                 <section>
