@@ -2439,6 +2439,11 @@ footer p {
     font-size: 24px;
 }
 
+.social-icons .teamicon {
+    color: #fff;
+    font-size: 28px;
+}
+
 .loader {
     display: inline-block;
     width: 50px;
@@ -2520,7 +2525,6 @@ footer p {
 
 .team-member-data {
     margin-top: 1rem;
-    margin-bottom: 15rem;
     margin-left: 30%;
     margin-right: 30%;
     font-size: 1rem;
@@ -2553,7 +2557,6 @@ footer p {
 
   .team-member-data {
       margin-top: 1rem;
-      margin-bottom: 5rem;
       margin-left: 5%;
       margin-right: 5%;
   }

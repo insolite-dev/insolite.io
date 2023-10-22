@@ -6,6 +6,9 @@ import NotFound from '../components/not_found';
 import LoadingIndicator from '../components/loading';
 import { doc } from 'firebase/firestore';
 import getData from '../api/fetcher';
+import { FaXTwitter } from 'react-icons/fa6';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { TbWorld } from 'react-icons/tb';
 
 const TeamMemberPage = () => {
     const router = useRouter();
@@ -41,10 +44,34 @@ const TeamMemberPage = () => {
                 <a href={`mailto:${member.email}`} className="text-white text-opacity-30">{member.email}</a>
                 <div className="paddingBottom" />
                 <div className="team-member-data" dangerouslySetInnerHTML={{ __html: member?.data || '' }} />
+                <div className="paddingBottom" />
+                <div className="social-icons">
+                    {member.github && (
+                        <a href={member.github} target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className="teamicon" />
+                        </a>
+                    )}
+                    {member.linkedin && (
+                        <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                            <AiFillLinkedin className="teamicon" />
+                        </a>
+                    )}
+                    {member.x && (
+                        <a href={member.x} target="_blank" rel="noopener noreferrer">
+                            <FaXTwitter className="teamicon" />
+                        </a>
+                    )}
+                    {member.website && (
+                        <a href={member.website} target="_blank" rel="noopener noreferrer">
+                            <TbWorld className="teamicon" />
+                        </a>
+                    )}
+                </div>
+                <div className="spacerBottom" />
             </div>
+
         </div>
     );
 };
-
 
 export default TeamMemberPage;

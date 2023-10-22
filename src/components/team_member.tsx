@@ -3,4 +3,8 @@ export default interface TeamMember {
     email: string;
     data: string;
     image: string;
+    x: string;
+    linkedin: string;
+    website: string;
+    github: string;
 }
