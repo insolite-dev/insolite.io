@@ -30,21 +30,21 @@ export default function Home() {
                     <h2 className="title-2"> Team </h2>
                     <p className="text-content">
                         Our team is led by{' '}
-                        <a href="/ismael" className="link">
+                        <a href="/team/ismael" className="link">
                             Ismael Shakverdiev
                         </a>
                         , founder of Insolite. While leadership within our organization flexibly transitions based on the specific projects and teams involved.{' '}
                         <br />
-                        <a href="/onur" className="link">
+                        <a href="/team/onur" className="link">
                             Onurhan Demir
                         </a> leads our Web team and serves as our Cyber Security lead. {' '}
                         <br />
-                        <a href="/rasul" className="link">
+                        <a href="/team/rasul" className="link">
                             Rasul Ramixanov
                         </a> plays a pivotal role in our team, contributing his expertise as a Mobile & Backend Engineer.
                         {' '}
                         <br />
-                        <a href="/akaki" className="link">
+                        <a href="/team/akaki" className="link">
                             Akaki Biwkinashvili
                         </a> is another integral member of our team, making significant contributions as a Web Engineer.
                     </p>
@@ -61,7 +61,7 @@ export default function Home() {
                     <p className="text-content">
                         To apply, please send your CV/cover letter to{' '}
                         <a href="mailto:careers@insolite.io">careers@insolite.io</a>. <br />
-                        Alternatively, you can join our <a href="https://insolite.io/discord">Discord server</a> or contribute directly to one of our projects on{' '}
+                        Alternatively, you can join our <a href="https://discord.gg/KMfY3Qp5zQ">Discord server</a> or contribute directly to one of our projects on{' '}
                         <a href="https://github.com/insolite-dev">github.com/insolite-dev</a> for the best way to get involved.
                     </p>
                     <div className="spacerBottom" />

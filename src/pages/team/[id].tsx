@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { db } from '../api/firebase';
-import TeamMember from '../components/team_member';
-import NotFound from '../components/not_found';
-import LoadingIndicator from '../components/loading';
+import { db } from '../../api/firebase';
+import TeamMember from '../../components/team_member';
+import NotFound from '../../components/not_found';
+import LoadingIndicator from '../../components/loading';
 import { doc } from 'firebase/firestore';
-import getData from '../api/fetcher';
+import getData from '../../api/fetcher';
 import { FaXTwitter } from 'react-icons/fa6';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { TbWorld } from 'react-icons/tb';
@@ -16,7 +16,6 @@ const TeamMemberPage = () => {
 
     const [member, setMember] = useState<TeamMember | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
-
 
     useEffect(() => {
         if (id) {
