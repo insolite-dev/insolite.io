@@ -30,18 +30,23 @@ export default function Home() {
                     <h2 className="title-2"> Team </h2>
                     <p className="text-content">
                         Our team is led by{' '}
-                        <a href="https://x.com/theiskaa" className="link">
+                        <a href="/ismael" className="link">
                             Ismael Shakverdiev
                         </a>
                         , founder of Insolite. While leadership within our organization flexibly transitions based on the specific projects and teams involved.{' '}
                         <br />
-                        <a href="https://x.com/Onurhan1337 " className="link">
+                        <a href="/onur" className="link">
                             Onurhan Demir
                         </a> leads our Web team and serves as our Cyber Security lead. {' '}
                         <br />
-                        <a href="https://x.com/Onurhan1337 " className="link">
+                        <a href="/rasul" className="link">
                             Rasul Ramixanov
-                        </a> is a key member of our team, contributing as a Mobile & Backend Engineer.
+                        </a> plays a pivotal role in our team, contributing his expertise as a Mobile & Backend Engineer.
+                        {' '}
+                        <br />
+                        <a href="/akaki" className="link">
+                            Akaki Biwkinashvili
+                        </a> is another integral member of our team, making significant contributions as a Web Engineer.
                     </p>
                     <div className="spacerBottom" />
                     <h2 className="title-2"> Join us </h2>

@@ -14,7 +14,7 @@
 }
 
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
+  font-size: calc(3rem + 4.5vw);
   font-family: "Saira Condensed", sans-serif;
   font-weight: 600;
   line-height: 1.2
@@ -22,7 +22,7 @@
 
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem
+    font-size: 6rem
   }
 }
 
@@ -2437,4 +2437,127 @@ footer p {
 
 .social-icons .icon-y {
     font-size: 24px;
+}
+
+.social-icons .teamicon {
+    color: #fff;
+    font-size: 28px;
+}
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #0070f3;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.gradientbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, black, #141414);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.gradientbg-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(to top, black, #141414);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.gradientbg-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: reveal 0.5s ease forwards 300ms;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.team-member-image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    border-color: #fff;
+    box-shadow: 0 8px 10px rgba(155, 172, 181, 0.2);
+}
+
+.team-member-data {
+    margin-top: 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1100px) {
+  .team-member-image {
+      height: 9rem;
+      width: 9rem;
+      box-shadow: 0 8px 10px rgba(155, 172, 181, 0.2);
+  }
+
+  .team-member-data {
+      margin-top: 1rem;
+      margin-left: 23%;
+      margin-right: 23%;
+  }
+}
+
+@media (max-width: 700px) {
+  .team-member-image {
+      height: 8rem;
+      width: 8rem;
+      box-shadow: 0 8px 10px rgba(155, 172, 181, 0.2);
+  }
+
+  .team-member-data {
+      margin-top: 1rem;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
 }
