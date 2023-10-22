@@ -5,7 +5,7 @@ export default function NotFound({ params }: any) {
         <span key={index}>{char}{' '}</span>
     ));
     return (
-        <div className="notfound">
+        <div className="gradientbg">
             <div className="flex flex-row justify-center items-center space-x-8">
                 <a href="/"> <InsoliteLogo size="150" color="white" /> </a>
                 <h1 className="display-1 text-white">404</h1>

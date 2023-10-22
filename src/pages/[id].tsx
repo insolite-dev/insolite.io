@@ -3,45 +3,35 @@ import { useEffect, useState } from 'react';
 import { db } from '../api/firebase';
 import TeamMember from '../components/team_member';
 import NotFound from '../components/not_found';
+import LoadingIndicator from '../components/loading';
 import { doc } from 'firebase/firestore';
-import getDoc from '../api/fetcher';
-
+import getData from '../api/fetcher';
 
 const TeamMemberPage = () => {
     const router = useRouter();
     const { id } = router.query;
 
     const [member, setMember] = useState<TeamMember | null>(null);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
 
     useEffect(() => {
-        if (!id) {
-            setIsLoading(false);
-            return;
+        if (id) {
+            const teamMember = doc(db, 'teammembers', `${id}`.toString().toLowerCase());
+            getData<TeamMember>(teamMember).then((data) => {
+                setMember(data);
+                setIsLoading(false);
+            });
         }
-
-        const teamMember = doc(db, 'teammembers', id.toString().toLowerCase());
-        const fetchData = async () => {
-            try {
-                const snap = await getDoc<TeamMember>(teamMember);
-                setMember(snap);
-                setIsLoading(false);
-            } catch (error) {
-                console.error('Could not fetch data', error);
-                setIsLoading(false);
-            }
-        };
-
-        fetchData();
     }, [id]);
 
-    if (isLoading) return (<div className="loader"></div>);
-    if (!member) return (<NotFound params={id} />)
+    if (isLoading) return (<div className="gradientbg"> <LoadingIndicator /> </div>);
+    if (!member) return (<div className="gradientbg"> <NotFound params={id} /> </div>);
+
     return (
-        <div>
+        <div className="gradientbg">
             <h2>{member.name}</h2>
             <p>Email: {member.email}</p>
-            {/* TODO: implement details */}
         </div>
     );
 };
