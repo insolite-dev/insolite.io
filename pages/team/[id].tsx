@@ -10,7 +10,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { TbWorld } from 'react-icons/tb';
 
-const TeamMemberPage = () => {
+function TeamMemberPage() {
     const router = useRouter();
     const { id } = router.query;
 
@@ -28,7 +28,7 @@ const TeamMemberPage = () => {
     }, [id]);
 
     if (isLoading) return (<div className="gradientbg"> <LoadingIndicator /> </div>);
-    if (!member) return (<div className="gradientbg"> <NotFound params={id} /> </div>);
+    if (!member) return (<NotFound />);
 
     return (
         <div className="gradientbg-1">

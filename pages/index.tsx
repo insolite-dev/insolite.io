@@ -1,6 +1,6 @@
-import Bg from '@/components/bg';
-import Footer from '@/components/footer';
-import InsoliteLogo from '@/components/insolite_logo';
+import Bg from '../components/bg';
+import Footer from '../components/footer';
+import InsoliteLogo from '../components/insolite_logo';
 
 export default function Home() {
     const slogElements = "Connecting the dots".split('').map((char, index) => (

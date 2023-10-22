@@ -1,7 +1,7 @@
-import InsoliteLogo from '@/components/insolite_logo';
+import InsoliteLogo from '../components/insolite_logo';
 
-export default function NotFound({ params }: any) {
-    const slogElements = `Couldn't connect the dots for "insolite.io/${params}"`.split(' ').map((char, index) => (
+export default function NotFound() {
+    const slogElements = "Couldn't connect the dots".split(' ').map((char, index) => (
         <span key={index}>{char}{' '}</span>
     ));
     return (
