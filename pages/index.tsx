@@ -6,6 +6,7 @@ export default function Home() {
     const slogElements = "Connecting the dots".split('').map((char, index) => (
         <span key={index}>{char}</span>
     ));
+
     return (
         <>
             <Bg />
