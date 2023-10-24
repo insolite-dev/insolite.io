@@ -2,7 +2,7 @@
 
 ## Tech Stack:
 - Web: We use Typescript and Next.js for building the web client. <br> These technologies enable us to develop scalable and high-performing web applications that are easy to maintain and extend.
-- Hosting: We use Cloudflare to host our web application. <br> Cloudflare provides fast and reliable hosting with great security features that help us to protect our platform and user data.
+- Hosting: We use Vercel to host our web application. <br> Vercel provides fast and reliable hosting with great security features that help us to protect our platform and user data.
 
 ## Getting Started
 To get started with the project, you will need to clone this repository to your local machine and then follow these steps:
