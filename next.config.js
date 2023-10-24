@@ -4,6 +4,7 @@ const nextConfig = {
     images: {
         domains: ['firebasestorage.googleapis.com'],
     },
+	experimental: { runtime: 'edge'}
 }
 
 module.exports = nextConfig
