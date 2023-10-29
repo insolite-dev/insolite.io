@@ -1,9 +1,14 @@
 import InsoliteLogo from '../components/insolite_logo';
 
-export default function NotFound() {
-    const slogElements = "Couldn't connect the dots".split(' ').map((char, index) => (
+export default function NotFound({
+    slog,
+}: {
+    slog: string;
+}) {
+    const slogElements = slog.split(' ').map((char, index) => (
         <span key={index}>{char}{' '}</span>
     ));
+
     return (
         <div className="gradientbg">
             <div className="flex flex-row justify-center items-center space-x-8">

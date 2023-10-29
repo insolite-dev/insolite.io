@@ -13,6 +13,7 @@ import { TbWorld } from 'react-icons/tb';
 function TeamMemberPage() {
     const router = useRouter();
     const { id } = router.query;
+    const route = router.asPath;
 
     const [member, setMember] = useState<TeamMember | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -28,7 +29,7 @@ function TeamMemberPage() {
     }, [id]);
 
     if (isLoading) return (<div className="gradientbg"> <LoadingIndicator /> </div>);
-    if (!member) return (<NotFound />);
+    if (!member) return (<NotFound slog={`Couldn't connect the dots for "insolite.io${route}"`}/>);
 
     return (
         <div className="gradientbg-1">
