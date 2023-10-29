@@ -8,6 +8,16 @@ export default function Home() {
     ));
     return (
         <>
+            <Head>
+                <title>Insolite - Connecting the dots</title>
+                <meta
+                    name="description"
+                    content="Connecting the dots. To make remarkable, insanely simple, and insolite projects."
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta property="og:image" content="/insolite-black-logo.png" />
+                <link rel="icon" href="/insolite-logo.png" />
+            </Head>
             <Bg />
             <div className="ctd">
                 <h2 className="animated display-3 animated-mission"> {slogElements} </h2>
