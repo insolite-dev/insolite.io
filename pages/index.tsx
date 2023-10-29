@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Bg from '../components/bg';
 import Footer from '../components/footer';
 import InsoliteLogo from '../components/insolite_logo';
