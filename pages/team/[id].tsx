@@ -1,9 +1,7 @@
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import { db } from '../../api/firebase';
 import TeamMember from '../../components/team_member';
 import NotFound from '../../components/not_found';
-import LoadingIndicator from '../../components/loading';
 import { doc } from 'firebase/firestore';
 import getData from '../../api/fetcher';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -11,25 +9,24 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { TbWorld } from 'react-icons/tb';
 import Head from 'next/head';
 
-function TeamMemberPage() {
+export const getServerSideProps = async (context: any) => {
+    const { id } = context.query;
+    const teamMember = doc(db, 'teammembers', `${id}`.toString().toLowerCase());
+    const data = await getData<TeamMember>(teamMember);
+
+    return {
+        props: {
+            member: data,
+        }
+    };
+};
+
+export default function TeamMemberPage({ member }: {
+    member: TeamMember | null
+}) {
     const router = useRouter();
-    const { id } = router.query;
     const route = router.asPath;
 
-    const [member, setMember] = useState<TeamMember | null>(null);
-    const [isLoading, setIsLoading] = useState<boolean>(true);
-
-    useEffect(() => {
-        if (id) {
-            const teamMember = doc(db, 'teammembers', `${id}`.toString().toLowerCase());
-            getData<TeamMember>(teamMember).then((data) => {
-                setMember(data);
-                setIsLoading(false);
-            });
-        }
-    }, [id]);
-
-    if (isLoading) return (<div className="gradientbg"> <LoadingIndicator /> </div>);
     if (!member) return (<NotFound slog={`Couldn't connect the dots for "insolite.io${route}"`} />);
 
     return (
@@ -78,10 +75,7 @@ function TeamMemberPage() {
                     </div>
                     <div className="spacerBottom" />
                 </div>
-
             </div>
         </>
     );
 };
-
-export default TeamMemberPage;
