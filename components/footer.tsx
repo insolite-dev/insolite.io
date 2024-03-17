@@ -15,7 +15,7 @@ export default function Footer() {
                         <a href="https://x.com/insolite_io" target="_blank" rel="noopener noreferrer">
                             <FaXTwitter className="icon-x"/>
                         </a>
-                        <a href="https://insolite.io/discord" target="_blank" rel="noopener noreferrer">
+                        <a href="https://discord.gg/8pDu6uu7Av" target="_blank" rel="noopener noreferrer">
                             <BsDiscord className="icon"/>
                         </a>
                         <a href="https://youtube.com/@InsoliteArchive?si=9Io_ojf75k2UEORg" target="_blank" rel="noopener noreferrer">

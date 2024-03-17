@@ -40,24 +40,18 @@ export default function Home() {
                     <div className="spacerBottom" />
                     <h2 className="title-2"> Team </h2>
                     <p className="text-content">
-                        Our team is led by{' '}
-                        <a href="/team/ismael" className="link">
+                        At Insolite, we may be a small core team, but our reach and capabilities extend far beyond our immediate circle. With a dedicated network of developers brought on board for specific projects, we ensure a versatile and comprehensive approach to every challenge.
+                        Our core team consists of three key members who actively contribute to all our projects. Under the leadership of  {' '}
+                        <a href="https://theiskaa.com" className="link">
                             Ismael Shakverdiev
-                        </a>
-                        , founder of Insolite. While leadership within our organization flexibly transitions based on the specific projects and teams involved.{' '}
-                        <br />
-                        <a href="/team/onur" className="link">
+                        </a>, with  {' '}
+                        <a href="https://onurhan.dev" className="link">
                             Onurhan Demir
-                        </a> leads our Web team and serves as our Cyber Security lead. {' '}
-                        <br />
-                        <a href="/team/rasul" className="link">
-                            Rasul Ramixanov
+                        </a> spearheading frontend, mobile, and design, and {' '}
+                        <a href="https://x.com/therasuldev" className="link">
+                            Rasul Ramikhanov
                         </a> plays a pivotal role in our team, contributing his expertise as a Mobile & Backend Engineer.
-                        {' '}
-                        <br />
-                        <a href="/team/akaki" className="link">
-                            Akaki Biwkinashvili
-                        </a> is another integral member of our team, making significant contributions as a Web Engineer.
+                        focusing on mobile and backend development, we are committed to delivering exceptional results. Together, we combine expertise, creativity, and innovation to transform ideas into reality."
                     </p>
                     <div className="spacerBottom" />
                     <h2 className="title-2"> Join us </h2>
