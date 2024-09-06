@@ -30,7 +30,7 @@ export default function Home() {
                     <p className="title-desc"> Building innovative projects with a transparent and collaborative approach</p>
                     <div className="spacerBottom" />
                     <p className="text-content">
-                        Insolite is a startup that’s all about creating unique and impactful tech solutions. While we embrace open-source for many of our side projects and packages, our main focus is on building large-scale projects that will shape the future of technology. We’re thinking big, and soon we plan to launch a major project that will start as open-source, allowing everyone to contribute and help shape its direction. Our approach to transparency and community involvement is what sets us apart.
+                        Insolite is a startup that’s all about creating unique and impactful tech solutions. While we embrace open-source for many of our side projects and packages, our main focus is on building large-scale projects that will shape the future of technology.
                     </p>
                     <div className="paddingBottom" />
                     <p className="text-content">
